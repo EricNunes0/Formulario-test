@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Teste</title>
+		<link rel = "stylesheet" href = "style.css"/>
+		<script type = "text/javascript" src = "script.js"></script>
+	</head>
+	<body>
+		<section>
+			<nav>
+				<a href = "https://estacio.br/" target = "_blank">Ir para Estácio</a>
+				<ul>
+					<li>Lista</li>
+					<li>sem</li>
+					<li>números</li>
+				</ul>
+				<ol>
+					<li>Lista</li>
+					<li>com</li>
+					<li>números</li>
+				</ol>
+			</nav>
+			<h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+			<form id = "input-form">
+				<label>Nome:</label>
+				<input type = "text" class = "text-inputs" id = "name-input" placeholder = "Nome"/>
+				<label>Sobrenome:</label>
+				<input type = "text" class = "text-inputs" id = "sobrenome-input" placeholder = "Sobrenome"/>
+				<label>Idade:</label>
+				<input type = "number" class = "number-inputs" id = "age-input" placeholder = "0"/>
+				<!--<input type = "submit" class = "submit-inputs" value = "Submit"></input>-->
+				<button type = "button" class = "submit-inputs" onclick = "getSubmit()">Enviar</button>
+			</form>
+		</section>
+		<section>
+			<table id = "table-list">
+				<tr>
+					<th>Nome</th>
+					<th>Sobrenome</th>
+					<th>Idade</th>
+				</tr>
+				<tr>
+					<td id = "name-answer">Não informado</td>
+					<td id = "sobrenome-answer">Não informado</td>
+					<td id = "age-answer">Não informado</td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
