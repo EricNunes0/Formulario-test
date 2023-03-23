@@ -9,28 +9,65 @@
 	<body>
 		<section>
 			<nav>
-				<a href = "https://estacio.br/" target = "_blank">Ir para Estácio</a>
-				<ul>
-					<li>Lista</li>
-					<li>sem</li>
-					<li>números</li>
-				</ul>
-				<ol>
-					<li>Lista</li>
-					<li>com</li>
-					<li>números</li>
-				</ol>
+				<div id = "nav-image">
+					<img id = "estacio-logo" src = "https://logodownload.org/wp-content/uploads/2014/12/estacio-logo-1536x390.png"></img>
+				</div>
+				<div>
+					<a href = "https://estacio.br/" target = "_blank" class = "nav-links">Ir para Estácio</a>
+					<a href = "https://estacio.br/" target = "_blank" class = "nav-links">Inscrever-se</a>
+					<a href = "https://estacio.br/" target = "_blank" class = "nav-links">Inscrições</a>
+				</div>
 			</nav>
-			<h1>FORMULÁRIO DE INSCRIÇÃO</h1>
 			<form id = "input-form">
-				<label>Nome:</label>
-				<input type = "text" class = "text-inputs" id = "name-input" placeholder = "Nome"/>
-				<label>Sobrenome:</label>
-				<input type = "text" class = "text-inputs" id = "sobrenome-input" placeholder = "Sobrenome"/>
-				<label>Idade:</label>
-				<input type = "number" class = "number-inputs" id = "age-input" placeholder = "0"/>
-				<!--<input type = "submit" class = "submit-inputs" value = "Submit"></input>-->
-				<button type = "button" class = "submit-inputs" onclick = "getSubmit()">Enviar</button>
+				<h1 id = "form-title">FORMULÁRIO DE INSCRIÇÃO</h1>
+				<fieldset>
+					<legend>Dados pessoais</legend>
+					<div>
+						<label>Nome:<input type = "text" class = "text-inputs" id = "name-input" placeholder = "Nome" required/></label>
+					</div>
+					<div>
+						<label>Sobrenome:<input type = "text" class = "text-inputs" id = "sobrenome-input" placeholder = "Sobrenome" required/></label>
+					</div>
+					<div>
+						<label>Idade:<input type = "number" class = "number-inputs" id = "age-input" placeholder = "0" required/></label>
+					</div>
+					<div>
+						<label>Sexo:
+							<input type = "radio" name = "gender" value = "Masculino" class = "radio-inputs" id = "gender-input" required/>
+							<label>Masculino</label>
+							<input type = "radio" name = "gender" value = "Feminino" class = "radio-inputs" id = "gender-input" required/>
+							<label>Feminino</label>
+							<input type = "radio" name = "gender" value = "Não-binário" class = "radio-inputs" id = "gender-input" required/>
+							<label>Outro</label>
+						</label>
+					</div>
+					<div>
+						<label>Data de chegada:<input type = "date" class = "date-inputs" id = "date-input" placeholder = "0" required/></label>
+					</div>
+					<div>
+						<label>Número de noites:<input type = "number" class = "number-inputs" id = "number-input" placeholder = "0" required/></label>
+					</div>
+					<div>
+						<label>Número de hospedes:<input type = "number" class = "number-inputs" id = "number-input" placeholder = "0" required/></label>
+					</div>
+					<div>
+						<label>Mensagem:
+							<textarea id="w3review" name="w3review" rows="4" cols="50">
+							</textarea>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Dados cadastrais</legend>
+						<div>
+							<label>Email:<input type = "email" class = "email-inputs" id = "email-input" placeholder = "matricula@alunos.estacio.br" required/></label>
+						</div>
+						<div>
+							<label>Senha:<input type = "password" class = "password-inputs" id = "email-input" placeholder = "Senha" required/></label>
+						</div>
+				</fieldset>
+				<input type = "submit" class = "submit-inputs" value = "Enviar" onclick = "getSubmit()"></input>
+				<form action = "" method = "post"/>
 			</form>
 		</section>
 		<section>
@@ -46,6 +83,9 @@
 					<td id = "age-answer">Não informado</td>
 				</tr>
 			</table>
+		</section>
+		<section>
+			
 		</section>
 	</body>
 </html>
